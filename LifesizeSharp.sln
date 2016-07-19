@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifesizeSharp", "LifesizeSharp\LifesizeSharp.csproj", "{FA0CFF46-B61D-4A90-841C-7E5D251F3F14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifesizeSharp.Tests", "LifesizeSharp.Tests\LifesizeSharp.Tests.csproj", "{9F62B3F3-247E-4D93-AD10-49EFC0B510F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA0CFF46-B61D-4A90-841C-7E5D251F3F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA0CFF46-B61D-4A90-841C-7E5D251F3F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA0CFF46-B61D-4A90-841C-7E5D251F3F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA0CFF46-B61D-4A90-841C-7E5D251F3F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F62B3F3-247E-4D93-AD10-49EFC0B510F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F62B3F3-247E-4D93-AD10-49EFC0B510F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F62B3F3-247E-4D93-AD10-49EFC0B510F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F62B3F3-247E-4D93-AD10-49EFC0B510F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
