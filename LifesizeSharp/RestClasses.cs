@@ -21,6 +21,16 @@ namespace LifesizeSharp
     }
 
     [DataContract]
+    public class RequestString
+    {
+        [DataMember(Name = "call")]
+        public string Call { get; set; }
+
+        [DataMember(Name = "params")]
+        public object Parameters { get; set; }
+    }
+
+    [DataContract]
     public class LifesizeLoginResponse : LifesizeResponse
     {
         [DataMember(Name = "session")]
@@ -80,6 +90,23 @@ namespace LifesizeSharp
 
     [DataContract]
     public class GetPresentationState : LifesizeResponse
+    {
+        [DataMember(Name = "state")]
+        public string State { get; set; }
+    }
+
+    [DataContract]
+    public class EnableChanged : LifesizeResponse
+    {
+        [DataMember(Name = "enabled")]
+        public int Enabled { get; set; }
+
+        [DataMember(Name = "dev")]
+        public Cameras Device { get; set; }
+    }
+
+    [DataContract]
+    public class StateChanged : LifesizeResponse
     {
         [DataMember(Name = "state")]
         public string State { get; set; }

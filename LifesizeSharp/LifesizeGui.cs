@@ -56,6 +56,14 @@ namespace LifesizeSharp
 
             return response.State;
         }
+
+        // EVENTS
+        public delegate void PresentationStateChangedEventHandler(object sender, StateChanged e);
+        public event PresentationStateChangedEventHandler PresentationStateChangedEvent;
+        public void OnPresentationStateChanged(StateChanged e)
+        {
+            PresentationStateChangedEvent?.Invoke(this, e);
+        }
     }
 
 }

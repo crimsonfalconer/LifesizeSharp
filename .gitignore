@@ -3,3 +3,5 @@ LifesizeSharp.Tests/obj/
 LifesizeSharp/obj/
 LifesizeSharp/bin/
 packages/
+.vs/LifesizeSharp/v14/.suo
+TestResults/

@@ -30,8 +30,6 @@ namespace LifesizeSharp
         Auto = 2
     };
 
-
-
     public class LifesizeCamera
     {
         private readonly CustomWebClient _webClient;
@@ -349,6 +347,14 @@ namespace LifesizeSharp
 
             if (response.ReturnValue != 0)
                 throw new Exception("Return Value: " + response.ReturnValue);
+        }
+
+        // EVENTS
+        public delegate void LockEnabledChangedEventHandler(object sender, EnableChanged e);
+        public event LockEnabledChangedEventHandler LockEnabledChangedEvent;
+        public void OnLockEnabledChanged(EnableChanged e)
+        {
+            LockEnabledChangedEvent?.Invoke(this, e);
         }
     }
 
